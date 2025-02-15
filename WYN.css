@@ -50,8 +50,8 @@ headerCell {
 
     background-color: var(--WYNblue);
     border-radius: 8px;
-    padding: 4px;
-    border-width:1px;
+    padding: 4px 12px;
+    border-width:2px;
 }
 
 /* footer */
