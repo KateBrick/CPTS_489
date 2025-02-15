@@ -1,0 +1,97 @@
+:root {
+    --WYNblue: #006afe;
+    --WYNorange: #ff6f26;
+    --WYNgold: #cfb228;
+    --WYNwhite: #fef5e4;
+}
+
+body{
+    background-color: var(--WYNwhite);
+}
+
+container{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/* header */
+h1 {
+    color: var(--WYNblue);
+    font-size: 18px;
+
+    /* display: table; */
+    width:100%;
+    height: 60px;
+
+    background-color: var(--WYNwhite);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+headerCell {
+    display: table-cell;
+    /* width:20%; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerImg {
+    height: 60px;
+}
+
+.blueButton {
+    color: var(--WYNwhite);
+    font-size: 18px;
+
+    background-color: var(--WYNblue);
+    border-radius: 8px;
+    padding: 4px;
+    border-width:1px;
+}
+
+/* footer */
+footer {
+    background: linear-gradient(var(--WYNblue), var(--WYNwhite));
+    height: 80px;
+}
+
+/* homepage */
+welcome {
+    background-color: var(--WYNblue);
+
+    background-image: url("images/welcomebg");
+    display:block;
+    width: calc(100% - 40px); /*full width minus padding*/
+    height: 260px;
+    padding: 90px 20px 20px 20px;
+}
+
+.servicesDisplay {
+    background-color: var(--WYNwhite);
+    width: 100%;
+    border-spacing: 12px;
+}
+
+.servicesRow {
+    width:100%;
+}
+
+.servicesCell {
+    background-color: var(--WYNorange);
+    height: 60px;
+    border-radius: 8px;
+    border: 8px var(--WYNorange);
+
+}
+
+welcomeTextContainer{
+    color: var(--WYNwhite);
+    font-size: 64px;
+
+    width:50%;
+}
