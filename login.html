@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Login | WYN</title>
+        <link rel="stylesheet" href="WYN.css">  
+    </head>
+
+    <body>
+        <container>
+            <header>
+                <h1>
+                    <headerCell style="width:25%;">
+                        <div style="width:50%; text-align:center;">services</div>
+                        <div style="width:50%; text-align:center;">about</div>
+                    </headerCell>
+                    <headerCell style="width:50%;">
+                        <div><img class="headerImg" src="images/logo-whiteblue.png"></div>
+                    </headerCell>
+                    <headerCell style="width:25%;"> <!--swap this out for account details if logged in-->
+                        <div><button class="blueButton">login/sign up</button></div>
+                    </headerCell>
+                </h1>
+            </header>
+
+            <main>
+                <loginBG>
+                    <loginContainer class="centering">
+                        <div>
+                            <loginTitle>
+                                login
+                            </loginTitle>
+                            <form class="loginForm">
+                                <label for="uname">username</label>
+                                <input class="loginField" type="text" id="uname" name="uname">
+                                <label for="pwd">password</label>
+                                <input class="loginField" type="password" id="pwd" name="pwd">
+                                <input class="blueButton centering" style="margin-top:12px;" type="submit" value="Submit">
+                            </form>
+                            <div class="centering">Don't have an account?</div>
+                            <a class="centering">sign up!</a>
+                        </div>
+                    </loginContainer>
+                </loginBG>
+            </main>
+
+
+            <footer>
+
+            </footer>
+
+
+        </container>
+    </body>
+</html>
