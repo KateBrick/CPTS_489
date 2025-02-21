@@ -46,9 +46,13 @@ body{
 	font-size: 14px;
 }
 
-#header-left .flex-item:hover{
+/* #header-left .flex-item:hover{
 	padding-left: 75px;
 	font-size: 14px;
+	text-decoration: underline;
+} */
+
+.underlineLink:hover{
 	text-decoration: underline;
 }
 
@@ -76,7 +80,7 @@ body{
 }
 
 #hero-image-section{
-	background-image: url('home-hero.png');
+	background-image: url('images/home-hero.png');
 	background-size: cover;
 	width: 100%;
     height: 676px;
@@ -148,7 +152,7 @@ body{
 
 .service-icon:hover{
 	background-color: #006AFE;
-	width: 360px;
+	/* width: 360px;
 	height: 200px;
 	border-radius: 50px;
 	margin: 50px;
@@ -156,7 +160,7 @@ body{
 	margin-bottom: 100px;
 	align-items: center;
 	justify-content: center;
-	color: #FEF5E4;
+	color: #FEF5E4; */
 	transition: background-color 0.3s ease;
 }
 
@@ -176,12 +180,19 @@ body{
     width:fit-content;
 }
 
-a{
+a {
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.loginLink{
     color: var(--WYNgray);
     text-decoration: underline;
 }
 
-a:hover {
+.loginLink:hover {
     color: var(--WYNorange);
 }
 
@@ -192,7 +203,7 @@ a:hover {
 }
 
 #about-us{
-	background-image: url('about-us.jpg');
+	background-image: url('images/about-us.jpg');
 	background-size: cover;
 	width: 100%;
     height: 676px;

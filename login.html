@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="utf-8">
-        <title>Login | WYN</title>
-        <link rel="stylesheet" href="WYN.css">  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WYN: Login</title>
+        <link rel="stylesheet" href="WYN.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <container>
             <header>
-                <h1>
-                    <headerCell style="width:25%;">
-                        <div style="width:50%; text-align:center;">services</div>
-                        <div style="width:50%; text-align:center;">about</div>
-                    </headerCell>
-                    <headerCell style="width:50%;">
-                        <div><img class="headerImg" src="images/logo-whiteblue.png"></div>
-                    </headerCell>
-                    <headerCell style="width:25%;"> <!--swap this out for account details if logged in-->
-                        <div><button class="blueButton">login/sign up</button></div>
-                    </headerCell>
-                </h1>
+                <div class="flex-box-row" id="header-div">
+                    <div class="flex-box-row" id="header-left">
+                        <div class="flex-item">
+                            <h2><a class="underlineLink" href="serviceListings.html">services</a></h2>
+                        </div>
+                        <div class="flex-item">
+                            <h2><a class="underlineLink" href="aboutUs.html">about</a></h2>
+                        </div>
+                    </div>
+                    <div class="flex-item" id="header-middle">
+                        <div class="flex-item">
+                            <a href="index.html"><img src="images/main-logo-blue.png" id="header-logo"></a>
+                        </div>
+                    </div>
+                    <div class="flex-item" id="header-right">
+                        <h2><a href="login.html">login/sign up</a></h2>
+                    </div>
+                </div>
             </header>
-
             <main>
                 <loginBG>
                     <loginContainer class="centering">
@@ -38,7 +47,7 @@
                                 <input class="blueButton centering" style="margin-top:12px;" type="submit" value="Submit">
                             </form>
                             <div class="centering">Don't have an account?</div>
-                            <a class="centering">sign up!</a>
+                            <a class="centering loginLink">sign up!</a>
                         </div>
                     </loginContainer>
                 </loginBG>
@@ -46,9 +55,18 @@
 
 
             <footer>
-
+                <div class="flex-box-row" id="footer-div">
+                    <div class="flex-item">
+                        <h3><a class="underlineLink" href="index.html">home</a></h3>
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/main-logo-white.png">
+                    </div>
+                    <div class="flex-item">
+                        <h3><a class="underlineLink" href="aboutUs.html">about us</a></h3>
+                    </div>
+                </div>
             </footer>
-
 
         </container>
     </body>
