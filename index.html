@@ -1,59 +1,99 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <title>Home | WYN</title>
-        <link rel="stylesheet" href="WYN.css">  
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WYN: Whatever You Need</title>
+    <link rel="stylesheet" href="WYN.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <body>
-        <container>
-            <header>
-                <h1>
-                    <headerCell style="width:25%;">
-                        <div style="width:50%; text-align:center;">services</div>
-                        <div style="width:50%; text-align:center;">about</div>
-                    </headerCell>
-                    <headerCell style="width:50%;">
-                        <div><img class="headerImg" src="images/logo-whiteblue.png"></div>
-                    </headerCell>
-                    <headerCell style="width:25%;"> <!--swap this out for account details if logged in-->
-                        <div><button class="blueButton">login/sign up</button></div>
-                    </headerCell>
-                </h1>
-            </header>
+    <header>
+        <div class="flex-box-row" id="header-div">
+            <div class="flex-box-row" id="header-left">
+                <div class="flex-item">
+                    <h2>services</h2>
+                </div>
+                <div class="flex-item">
+                    <h2>about</h2>
+                </div>
+            </div>
+            <div class="flex-item" id="header-middle">
+                <div class="flex-item">
+                    <img src="main-logo-blue.png" id="header-logo">
+                </div>
+            </div>
+            <div class="flex-item" id="header-right">
+                <h2>login/sign up</h2>
+            </div>
+        </div>
+    </header>
 
-            <main>
-                <welcome>
-                    <welcomeTextContainer>
-                        <div>
-                            whatever you<br>need<br>
-                            <button class="blueButton">explore services</button>
-                        </div>
-                    </welcomeTextContainer>
-                </welcome>
+    <div id="hero-image-section">
+        <h2>whatever <br> you need.</h2>
+        <div id="explore-button">
+            <h3>explore services</h3>
+        </div>
+    </div>
 
-                <table class="servicesDisplay" style="height:500px">
-                    <tr class = "servicesRow">
-                        <td class="servicesCell"></td>
-                        <td class="servicesCell"></td>
-                        <td class="servicesCell"></td>
-                    </tr>
-                    <tr class = "servicesRow">
-                        <td class="servicesCell"></td>
-                        <td class="servicesCell"></td>
-                        <td class="servicesCell"></td>
-                    </tr>
-                    
-                </table>
-            </main>
+    <div id="explore-services" class="flex-box-row">
+        <div class="flex-box-column service-icon">
+            <div class="flex-item">
+                <h3>98053</h3>
+            </div>
+            <div class="flex-item">
+                <h2>lawn mowing</h2>
+            </div>
+            <div class="flex-item">
+                <h3>dave's mowing</h3>
+            </div>
+        </div>
+         <div class="flex-box-column service-icon">
+            <div class="flex-item">
+                <h3>98053</h3>
+            </div>
+            <div class="flex-item">
+                <h2>lawn mowing</h2>
+            </div>
+            <div class="flex-item">
+                <h3>dave's mowing</h3>
+            </div>
+        </div>
+        <div class="flex-box-column service-icon">
+            <div class="flex-item">
+                <h3>98053</h3>
+            </div>
+            <div class="flex-item">
+                <h2>lawn mowing</h2>
+            </div>
+            <div class="flex-item">
+                <h3>dave's mowing</h3>
+            </div>
+        </div>
+    </div>
 
+    <div id="about-us">
+        <h2>we're <br> cool people<br>(trust us)</h2>
+        <div id="about-us-button">
+            <h3>learn about our team</h3>
+        </div>
+    </div>
 
-            <footer>
-
-            </footer>
-
-
-        </container>
-    </body>
+    <footer>
+        <div class="flex-box-row" id="footer-div">
+            <div class="flex-item">
+                <h3>home</h3>
+            </div>
+            <div class="flex-item">
+                <img src="main-logo-white.png">
+            </div>
+            <div class="flex-item">
+                <h3>about us</h3>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
