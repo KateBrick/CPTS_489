@@ -756,3 +756,148 @@ messageBubble{
 	border-bottom-left-radius: 0px;
 	background-color: var(--WYNblue);
 }
+
+/*rachels edits 2/25*/
+
+#service-details-main-content{
+	background-color: var(--WYNwhite);
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+#service-left{
+	padding-left: 200px;
+	width: 700px;
+}
+
+#service-left img{
+	width: 700px;
+}
+
+#service-left p{
+	padding-top: 10px;
+	color: #0453B2;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+#service-right{
+	padding-left: 100px;
+}
+
+#service-right h2{
+	color: var(--WYNblue);
+	padding: 0px;
+	margin: 0px;
+	font-size: 38px;
+	text-align: right;
+}
+
+#service-right h3{
+	color: var(--WYNblue);
+	padding: 0px;
+	margin: 0px;
+	font-weight: 300;
+	text-align: right;
+}
+
+
+
+
+
+#send-request-button{
+	background-color: #006AFE;
+	width: 400px;
+	height: 56px;
+	border-radius: 50px;
+	margin-top: 200px;
+	margin-left: 30px;
+}
+
+#send-request-button h2{
+	font-size: 24px;
+	margin-top: 13px;
+	text-align: center;
+	color: #FEF5E4;
+}
+
+#send-request-button:hover{
+	background-color: #FF6F26;
+	transition: background-color 0.3s ease;
+}
+
+#service-confirmation{
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-color: var(--WYNwhite);
+	align-items: center;
+	justify-content: center;
+}
+
+#service-confirmation h2{
+	color: var(--WYNorange);
+	font-size: 38px;
+}
+
+#service-confirmation h3{
+	color: var(--WYNblue);
+	font-size: 24px;
+	font-weight: 300;
+}
+
+#return-to-service{
+	background-color: #006AFE;
+	margin-top: 50px;
+	width: 400px;
+	height: 56px;
+	border-radius: 50px;
+}
+
+#return-to-service:hover{
+	background-color: #FF6F26;
+	transition: background-color 0.3s ease;
+}
+
+#return-to-service h2{
+	font-size: 24px;
+	margin-top: 16px;
+	text-align: center;
+	color: #FEF5E4;
+}
+
+.service-array {
+    display: flex;
+    background-color: var(--WYNwhite);
+    flex-wrap: wrap; 
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .service-item {
+    flex: 0 1 calc(33.33% - 70px);
+    box-sizing: border-box;
+    height: 300px;
+    width: 100px;
+    text-align: center;
+    color: var(--WYNblue);
+  }
+
+  .service-item img{
+  	width: 300px;
+  	padding-bottom: 10px;
+  }
+
+  .service-item h3{
+  	padding: 0px;
+  	padding-bottom: 10px;
+  	margin: 0px;
+  }
+
+  .service-item h2{
+  	padding: 0px;
+  	padding-bottom: 10px;
+  	margin: 0px;
+  }
