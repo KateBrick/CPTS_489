@@ -271,12 +271,13 @@ a {
 
 #footer-div h3{
 	color: #FEF5E4;
-	margin: 100px;
+	/* margin:100px; */
+	margin: 0px 100px 0px 100px;
 }
 
 #footer-div h3:hover{
-	color: #FEF5E4;
-	margin: 100px;
+	/* color: #FEF5E4;
+	margin: 100px; */
 	text-decoration: underline;
 }
 
@@ -375,4 +376,144 @@ input[type=checkbox].loginFielda{
 
     accent-color: var(--WYNorange);
     float: right;
+}
+
+/* messaging */
+.flexContainer{
+	display:flex;
+	flex-direction: column;
+}
+
+.messageContainer{
+	font-size: 0px;
+	/* flex-grow: 1; */
+	/* flex: 1 1 auto; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	border: var(--WYNblue) solid 4px;
+	height: calc(100vh - 150px - 8px - 20px); /*100% of screen height, minus header height, minus border height*/
+	width: 100%;
+	/* height: 100%; */
+}
+
+.peopleList {
+	color: var(--WYNblue);
+	font-size: 22px;
+
+	display: inline-block;
+	width: 40%;
+	height: 100%;
+	vertical-align: top;
+	overflow-y:auto;
+	/* height: 440px; */
+
+	background-color: var(--WYNgold);
+}
+
+peopleProfile{
+	width: calc(100% - 24px);
+	height: 60px;
+	padding: 10px;
+	border: 2px solid var(--WYNblue);
+	display: block;
+}
+
+.peopleProfileImg{
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	object-fit: cover;
+	border-radius: 50%;
+    vertical-align: middle;
+}
+
+peopleProfileTextContainer{
+	display: inline-block;
+    vertical-align: middle;
+	/* width: calc(100% - 68px); */
+	width: calc(100% - 86px);
+	height: 80%;
+	margin: 8px;
+}
+
+peopleProfileName{
+	font-size: 22px;
+	height: 50%;
+	width: 100%;
+	display: inline-block;
+}
+
+peopleProfileLastMessage{
+	font-size: 14px;
+	height: 50%;
+	width: 100%;
+	display: inline-block;
+}
+
+.messageMenuContainer {
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+}
+
+
+messageHeader {
+	height: 60px;
+	background-color: var(--WYNwhite);
+	display: block;
+	padding: 12px;
+}
+
+messageHeaderName {
+	font-size: 22px;
+
+	display: inline-block;
+    vertical-align: middle;
+	/* width: calc(100% - 68px); */
+	width: fit-content;
+	max-width: calc(100% - 60px);
+	margin-left: 8px;
+}
+
+.messageMenu {
+	display: flex;
+	flex-direction: column-reverse;
+	width: calc(100% - 40px);
+	height: calc(100% - 84px - 40px); /*height minus header minus padding*/
+	padding: 20px;
+
+	overflow-y:auto;
+	overflow-anchor: bottom;
+
+	/* height: 440px; */
+
+	/* background-color: var(--WYNwhite); */
+	background-color: var(--WYNorange);
+}
+
+messageBubble{
+	color: black;
+	font-size: 16px;
+
+	display: block;
+	width: fit-content;
+	max-width: 65%;
+	border-radius: 20px;
+	padding: 12px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.msgFromUser{
+	margin-left: auto;
+	margin-right: 0px;
+	border-bottom-right-radius: 0px;
+	background-color: var(--WYNwhite);
+}
+
+.msgFromOther{
+	margin-left: 0px;
+	margin-right: auto;
+	border-bottom-left-radius: 0px;
+	background-color: var(--WYNblue);
 }
