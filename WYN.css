@@ -586,6 +586,7 @@ loginTitle{
 /* sign up */
 signupLabel{
     font-size: 24px;
+	padding-top: 16px;
     padding-bottom: 8px;
     display: block;
 }
@@ -625,14 +626,10 @@ input[type=checkbox].loginFielda{
 
 .messageContainer{
 	font-size: 0px;
-	/* flex-grow: 1; */
-	/* flex: 1 1 auto; */
-	/* display: flex; */
-	/* flex-direction: column; */
+
 	border: var(--WYNblue) solid 4px;
 	height: calc(100vh - 150px - 8px - 20px); /*100% of screen height, minus header height, minus border height*/
-	width: 100%;
-	/* height: 100%; */
+	width: calc(100%-8px);
 }
 
 .peopleList {
@@ -644,7 +641,6 @@ input[type=checkbox].loginFielda{
 	height: 100%;
 	vertical-align: top;
 	overflow-y:auto;
-	/* height: 440px; */
 
 	background-color: var(--WYNgold);
 }
@@ -669,7 +665,6 @@ peopleProfile{
 peopleProfileTextContainer{
 	display: inline-block;
     vertical-align: middle;
-	/* width: calc(100% - 68px); */
 	width: calc(100% - 86px);
 	height: 80%;
 	margin: 8px;
@@ -677,22 +672,29 @@ peopleProfileTextContainer{
 
 peopleProfileName{
 	font-size: 22px;
-	height: 50%;
+	height: 40%;
 	width: 100%;
 	display: inline-block;
 }
 
 peopleProfileLastMessage{
 	font-size: 14px;
-	height: 50%;
+
+	height: 60%;
 	width: 100%;
-	display: inline-block;
+
+	overflow: hidden;
+	display: -webkit-box; /*this lets the message be cut off with elipses and be multiple lines*/
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .messageMenuContainer {
-	width: 60%;
+	width: 100%;
 	height: 100%;
-	display: inline-block;
+
+	display: flex;
+  	flex-flow: column;
 }
 
 
@@ -708,7 +710,6 @@ messageHeaderName {
 
 	display: inline-block;
     vertical-align: middle;
-	/* width: calc(100% - 68px); */
 	width: fit-content;
 	max-width: calc(100% - 60px);
 	margin-left: 8px;
@@ -716,17 +717,13 @@ messageHeaderName {
 
 .messageMenu {
 	display: flex;
+	flex: 1 1 auto;
 	flex-direction: column-reverse;
-	width: calc(100% - 40px);
-	height: calc(100% - 84px - 40px); /*height minus header minus padding*/
 	padding: 20px;
 
 	overflow-y:auto;
 	overflow-anchor: bottom;
 
-	/* height: 440px; */
-
-	/* background-color: var(--WYNwhite); */
 	background-color: var(--WYNorange);
 }
 
@@ -755,4 +752,31 @@ messageBubble{
 	margin-right: auto;
 	border-bottom-left-radius: 0px;
 	background-color: var(--WYNblue);
+}
+
+.sendMessage{
+	background-color: var(--WYNblue);
+	width: 100%;
+	height: 50px;
+	padding: 2px;
+
+}
+
+.sendMessageText{
+	background-color: var(--WYNwhite);
+	border-radius: 8px;
+	width: 88%;
+	margin: 4px;
+	padding: 4px;
+
+	vertical-align: middle;
+}
+
+.sendMessageSubmit {
+	background-color: var(--WYNwhite);
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+
+	vertical-align: middle;
 }

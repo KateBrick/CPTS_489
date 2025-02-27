@@ -113,7 +113,7 @@
                                     Weed Wackers
                                 </peopleProfileName>
                                 <peopleProfileLastMessage>
-                                    This is an extremely long message that gets cut off due to being too long. If it's too long, it'll get truncated and end with an elipse. Just a really, really long...
+                                    This is an extremely long message that gets cut off due to being too long. If it's too long, it'll get truncated and end with an elipse. Just a really, really long message that will get cut off even if this is on a really big screen.
                                 </peopleProfileLastMessage>
                             </peopleProfileTextContainer>
                         </peopleProfile>
@@ -160,6 +160,7 @@
 
 
 
+                    <div style="height:100%; display:inline-block; width:60%">
                     <div class = "messageMenuContainer">
                         <messageHeader>
                             <div style="margin: auto; height: 100%; width: fit-content;">
@@ -201,6 +202,13 @@
                                 Hey, I saw your posting, what would the cost be?
                             </messageBubble>
                         </div>
+
+                        <form class="sendMessage">
+                            <textarea class = "sendMessageText" id="msg" name="msg" cols="40" wrap="break-word"></textarea>
+                            <input class= "sendMessageSubmit" type="image" src="images/sendIcon.png" alt="send message" id="send" name="send" value="">
+                        </form>
+
+                    </div>
                     </div>
 
 
