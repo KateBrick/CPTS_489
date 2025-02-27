@@ -258,6 +258,7 @@ body{
 	font-weight: 700;
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.9);
 	z-index: 10;
+	border-bottom: 1px solid var(--WYNblue);
 }
 
 #header-logo{
@@ -900,4 +901,10 @@ messageBubble{
   	padding: 0px;
   	padding-bottom: 10px;
   	margin: 0px;
+  }
+
+#star-rating{
+  	color: var(--WYNorange);
+  	padding-top: 20px;
+  	padding-left: 350px;
   }
