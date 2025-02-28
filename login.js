@@ -1,17 +1,37 @@
+const form = document.querySelector('form');
+const loginErrorMsg = document.createElement('div');
 
-const loginForm = document.getElementById('loginForm');
-const loginButton = document.getElementById('loginBtn');
-const loginErrorMsg = document.getElementById('loginErrorMsg');
-
-loginButton.addEventListener('click', (e) => {
+document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
+    const pwd = loginForm.pwd.value;
     const email = loginForm.email.value;
-    const password = loginForm.pwd.value;
+    const errors = getLoginFormErrors(email, pwd);
 
-    if (email === "katie@" && password === "b") {
-        alert("You have successfully logged in.");
-        location.reload();
-    } else {
-        loginErrorMsg.style.opacity = 1;
+    if(errors.length > 0) {
+        loginErrorMsg.innerText = errors.join(", ");
+    } else if (email === 'katie' && pwd === 'b') {
+        window.location.href = "profile.html";
     }
-})
+    else{
+        loginErrorMsg.innerText = "Email or Password is incorrect";
+    }
+});
+
+function getLoginFormErrors(email, pwd) {
+    let errors = [];
+
+    if (form.email.value === "") {
+        errors.push("Email is required");
+    }
+
+    if (form.pwd.value === "") {
+        errors.push("Password is required");
+    }
+
+    if(pwd !== "b") {
+        errors.push("Password is incorrect");
+    }
+
+    return errors;
+}
+
